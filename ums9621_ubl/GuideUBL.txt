@@ -1,0 +1,16 @@
+Step 1 : Connect BROM Mode (U2S Diag) , run dumpNV.bat to backup NV/IMEI data
+Step 2 : Run unlock_autopatch_9621.bat as Administrator.
+- Interaction Guide: The script will pause for manual confirmation. Watch the console:
++Prompt y: Type y and press Enter.
++Prompt yes: Type yes and press Enter
++Instruction to reconnect: Disconnect, force power off, and reconnect in BROM mode, then press Enter.
+
+
+================================================================================
+Verification: Successful exploit will show this on the device screen:
+INFO: LOCK FLAG IS : UNLOCK!!!
+WARNING: LOCK FLAG IS : UNLOCK, SKIP VERIFY!!!
+================================================================================
+
+Step 3: Run DisableAVB.bat to disable AVB
+DONE !
